@@ -25,7 +25,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 ## What the measurement shows
 
 - A secret agrees on name, type, id and timestamps -- and never on its value: providers return secret metadata on the resource and the value through a separate read, so the value does not reach core anywhere.
-- Secrets management publishes thinly (46 providers in the cohort, 12 mapped): the cloud providers' secret managers dominate the market and several are absent as OpenAPI.
+- Secrets management publishes thinly: 46 providers in the cohort, 12 mapped.
 
 ## Artifacts
 
