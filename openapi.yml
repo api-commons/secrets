@@ -1,0 +1,188 @@
+openapi: 3.1.0
+info:
+  title: Secrets Management (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common Secrets Management interface, distilled from the harvested OpenAPI of 46 providers in
+    the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /secrets:
+    get:
+      operationId: listSecrets
+      summary: List secrets
+      tags:
+      - Secrets
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Secret'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createSecret
+      summary: Create a secret
+      tags:
+      - Secrets
+      x-commons-tier: core
+      x-commons-share: 0.778
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /secrets/{secret_id}:
+    parameters:
+    - $ref: '#/components/parameters/secret_id'
+    delete:
+      operationId: deleteSecret
+      summary: Delete a secret
+      tags:
+      - Secrets
+      x-commons-tier: core
+      x-commons-share: 0.778
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    get:
+      operationId: getSecret
+      summary: Get a secret
+      tags:
+      - Secrets
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateSecret
+      summary: Update a secret
+      tags:
+      - Secrets
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /secret-stores:
+    get:
+      operationId: listSecretStores
+      summary: List secret stores
+      tags:
+      - Secret Stores
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/SecretStore'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /secret-stores/{secret_store_id}:
+    parameters:
+    - $ref: '#/components/parameters/secret_store_id'
+    get:
+      operationId: getSecretStore
+      summary: Get a secret store
+      tags:
+      - Secret Stores
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+  /encryption-keys/{encryption_key_id}:
+    parameters:
+    - $ref: '#/components/parameters/encryption_key_id'
+    get:
+      operationId: getEncryptionKey
+      summary: Get an encryption key
+      tags:
+      - Encryption Keys
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EncryptionKey'
+components:
+  schemas:
+    Secret:
+      $ref: ./schema/secret.json
+    SecretStore:
+      $ref: ./schema/secret_store.json
+    EncryptionKey:
+      $ref: ./schema/encryption_key.json
+  parameters:
+    secret_id:
+      name: secret_id
+      in: path
+      required: true
+      schema:
+        type: string
+    secret_store_id:
+      name: secret_store_id
+      in: path
+      required: true
+      schema:
+        type: string
+    encryption_key_id:
+      name: encryption_key_id
+      in: path
+      required: true
+      schema:
+        type: string

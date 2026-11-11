@@ -1,0 +1,39 @@
+provider: britive
+apis_io: https://apis.io/providers/britive/
+context: secrets
+generated: '2026-11-11'
+concepts:
+  secret:
+    path_segment:
+    - secrets
+    properties:
+      metadata: metadata
+      id:
+      - id
+      - secretId
+      name:
+      - name
+      - path
+      type: secretType
+      description: description
+      status: status
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/britive-secrets-manager-api-openapi.json#DELETE /api/v1/secretmanager/vault/{vaultId}/secrets
+    - openapi/_original/britive-secrets-manager-api-openapi.json#GET /api/v1/secretmanager/vault/secrets
+    - openapi/_original/britive-secrets-manager-api-openapi.json#GET /api/v1/secretmanager/vault/secrets/{id}
+    - openapi/_original/britive-secrets-manager-api-openapi.json#GET /api/v1/secretmanager/vault/{vaultId}/secrets
+    - openapi/_original/britive-secrets-manager-api-openapi.json#PATCH /api/v1/secretmanager/vault/{vaultId}/secrets
+  secret_store:
+    path_segment:
+    - vault
+    properties:
+      id: id
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/britive-secrets-manager-api-openapi.json#DELETE /api/v1/secretmanager/vault/{id}
+    - openapi/_original/britive-secrets-manager-api-openapi.json#GET /api/v1/secretmanager/vault
+    - openapi/_original/britive-secrets-manager-api-openapi.json#GET /api/v1/secretmanager/vault/{id}
+    - openapi/_original/britive-secrets-manager-api-openapi.json#PATCH /api/v1/secretmanager/vault/{id}
+    - openapi/_original/britive-secrets-manager-api-openapi.json#POST /api/v1/secretmanager/vault

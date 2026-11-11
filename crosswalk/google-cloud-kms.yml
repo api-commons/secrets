@@ -1,0 +1,15 @@
+provider: google-cloud-kms
+apis_io: https://apis.io/providers/google-cloud-kms/
+context: secrets
+generated: '2026-11-11'
+concepts:
+  encryption_key:
+    path_segment:
+    - keyrings
+    properties:
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/openapi.yml#GET /projects/{projectId}/locations/{location}/keyRings
+    - openapi/_original/openapi.yml#GET /projects/{projectId}/locations/{location}/keyRings/{keyRingId}
+    - openapi/_original/openapi.yml#POST /projects/{projectId}/locations/{location}/keyRings

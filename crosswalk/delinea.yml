@@ -1,0 +1,25 @@
+provider: delinea
+apis_io: https://apis.io/providers/delinea/
+context: secrets
+generated: '2026-11-11'
+concepts:
+  secret:
+    path_segment:
+    - secrets
+    - secret
+    properties:
+      id:
+      - guid
+      - secretId
+      - id
+      name: name
+      description: comment
+      status: active
+      store_id: folderId
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/delinea-secret-server-openapi.json#DELETE /v1/secrets/{id}
+    - openapi/_original/delinea-secret-server-openapi.json#GET /v1/secret-access-requests/secrets/{id}
+    - openapi/_original/delinea-secret-server-openapi.json#GET /v1/secret-erase-requests/secrets
+    - openapi/_original/delinea-secret-server-openapi.json#GET /v2/launchers/secret
+    - openapi/_original/delinea-secret-server-openapi.json#GET /v2/secrets

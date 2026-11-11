@@ -1,0 +1,30 @@
+provider: onecli
+apis_io: https://apis.io/providers/onecli/
+context: secrets
+generated: '2026-11-11'
+concepts:
+  secret:
+    path_segment:
+    - secrets
+    properties:
+      metadata: metadata
+      created_at: createdAt
+      id: id
+      name: name
+      type: type
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/onecli-openapi-original.yml#DELETE /org/secrets/{secretId}
+    - openapi/_original/onecli-openapi-original.yml#DELETE /partner/secrets/{secretId}
+    - openapi/_original/onecli-openapi-original.yml#DELETE /secrets/{secretId}
+    - openapi/_original/onecli-openapi-original.yml#GET /agents/{agentId}/secrets
+    - openapi/_original/onecli-openapi-original.yml#GET /org/secrets
+  secret_store:
+    path_segment:
+    - vaults
+    properties:
+      id: id
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/onecli-openapi-original.yml#GET /vaults

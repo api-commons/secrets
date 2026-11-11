@@ -1,0 +1,17 @@
+provider: ironcore-labs
+apis_io: https://apis.io/providers/ironcore-labs/
+context: secrets
+generated: '2026-11-11'
+concepts:
+  secret:
+    path_segment:
+    - secrets
+    properties:
+      metadata: tags
+      created_at: created
+      id: id
+      type: secretType
+      updated_at: updated
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/ironcore-labs-vendor-bridge-openapi.yml#GET /1/tenants/secrets

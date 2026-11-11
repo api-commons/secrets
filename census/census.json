@@ -1,0 +1,1610 @@
+{
+ "cohort_size": 46,
+ "unreadable": [],
+ "concepts": {
+  "secret": {
+   "1password": {
+    "segments": [
+     "items"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "vault": "object",
+     "category": "string",
+     "urls": "array",
+     "favorite": "boolean",
+     "tags": "array",
+     "version": "integer",
+     "state": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "lastEditedBy": "string",
+     "fields": "array",
+     "sections": "array",
+     "op": "string",
+     "path": "string",
+     "value": null
+    },
+    "evidence": [
+     "openapi/_original/1password-connect-openapi.yml#DELETE /v1/vaults/{vaultUuid}/items/{itemUuid}",
+     "openapi/_original/1password-connect-openapi.yml#GET /v1/vaults/{vaultUuid}/items",
+     "openapi/_original/1password-connect-openapi.yml#GET /v1/vaults/{vaultUuid}/items/{itemUuid}",
+     "openapi/_original/1password-connect-openapi.yml#PATCH /v1/vaults/{vaultUuid}/items/{itemUuid}",
+     "openapi/_original/1password-connect-openapi.yml#POST /v1/vaults/{vaultUuid}/items",
+     "openapi/_original/1password-connect-openapi.yml#PUT /v1/vaults/{vaultUuid}/items/{itemUuid}"
+    ]
+   },
+   "aembit": {
+    "segments": [
+     "secrets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "page": "integer",
+     "perPage": "integer",
+     "order": [
+      "null",
+      "string"
+     ],
+     "statusCode": "integer",
+     "recordsTotal": "integer",
+     "entities": [
+      "null",
+      "array"
+     ],
+     "externalId": "string",
+     "name": [
+      "null",
+      "string"
+     ],
+     "type": [
+      "null",
+      "string"
+     ],
+     "subject": [
+      "null",
+      "string"
+     ],
+     "expiresAt": [
+      "null",
+      "string"
+     ],
+     "secret": "string",
+     "description": [
+      "null",
+      "string"
+     ],
+     "isActive": "boolean",
+     "tags": [
+      "null",
+      "array"
+     ],
+     "createdAt": "string",
+     "modifiedAt": [
+      "null",
+      "string"
+     ],
+     "createdBy": [
+      "null",
+      "string"
+     ],
+     "modifiedBy": [
+      "null",
+      "string"
+     ],
+     "resourceSet": "string",
+     "id": "integer",
+     "provider": "string",
+     "matchRules": [
+      "null",
+      "array"
+     ],
+     "certificate": [
+      "null",
+      "string"
+     ],
+     "jwks": [
+      "null",
+      "string"
+     ],
+     "publicKeyValidation": "object",
+     "oidcUrl": [
+      "null",
+      "string"
+     ],
+     "pemType": [
+      "null",
+      "string"
+     ],
+     "accessPolicyCount": "integer",
+     "agentControllersCount": "integer",
+     "agentControllerIds": [
+      "null",
+      "array"
+     ],
+     "isAembitTenantOidcToken": "boolean",
+     "metadataUrl": [
+      "null",
+      "string"
+     ],
+     "metadataXml": [
+      "null",
+      "string"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/aembit-cloud-openapi-original.yml#DELETE /api/v1/trust-providers/{tpId}/secrets/{secretId}",
+     "openapi/_original/aembit-cloud-openapi-original.yml#GET /api/v1/trust-providers/{tpId}/secrets",
+     "openapi/_original/aembit-cloud-openapi-original.yml#GET /api/v1/trust-providers/{tpId}/secrets/{secretId}",
+     "openapi/_original/aembit-cloud-openapi-original.yml#POST /api/v1/trust-providers/{tpId}/secrets"
+    ]
+   },
+   "britive": {
+    "segments": [
+     "secrets"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "entityType": "string",
+     "id": "string",
+     "name": "string",
+     "value": "object",
+     "secretMetadata": "object",
+     "description": "string",
+     "staticSecretTemplateId": "string",
+     "secretMode": "string",
+     "secretNature": "string",
+     "lastRotation": "string",
+     "nextRotation": "string",
+     "path": "string",
+     "secretType": "string",
+     "rotationInterval": "integer",
+     "status": "string",
+     "metadata": "object",
+     "secondaryValue": "object",
+     "dualAccount": "boolean",
+     "rotationSettings": "object",
+     "filename": "string",
+     "registrationStatus": "string",
+     "delegationEnabled": "boolean",
+     "rotationIntervalUnit": "string",
+     "secretId": "string"
+    },
+    "evidence": [
+     "openapi/_original/britive-secrets-manager-api-openapi.json#DELETE /api/v1/secretmanager/vault/{vaultId}/secrets",
+     "openapi/_original/britive-secrets-manager-api-openapi.json#GET /api/v1/secretmanager/vault/secrets",
+     "openapi/_original/britive-secrets-manager-api-openapi.json#GET /api/v1/secretmanager/vault/secrets/{id}",
+     "openapi/_original/britive-secrets-manager-api-openapi.json#GET /api/v1/secretmanager/vault/{vaultId}/secrets",
+     "openapi/_original/britive-secrets-manager-api-openapi.json#PATCH /api/v1/secretmanager/vault/{vaultId}/secrets",
+     "openapi/_original/britive-secrets-manager-api-openapi.json#POST /api/v1/secretmanager/vault/{vaultId}/secrets",
+     "openapi/_original/britive-services-api-openapi.json#GET /api/access-requests/tags/{tagId}/secrets",
+     "openapi/_original/britive-services-api-openapi.yml#GET /api/access-requests/tags/{tagId}/secrets"
+    ]
+   },
+   "cubist": {
+    "segments": [
+     "secrets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "PATCH collection",
+     "PUT item"
+    ],
+    "properties": {
+     "created": null,
+     "last_modified": null,
+     "version": "integer",
+     "edit_policy": "object",
+     "metadata": null,
+     "names": "array",
+     "secrets": "array",
+     "applies_to_scopes": null,
+     "mfa": null,
+     "time_lock_until": null,
+     "acl": null,
+     "import_key": null,
+     "value": null
+    },
+    "evidence": [
+     "openapi/_original/cubist-cubesigner-openapi-original.json#DELETE /v0/org/{org_id}/policy/secrets/{secret_name}",
+     "openapi/_original/cubist-cubesigner-openapi-original.json#GET /v0/org/{org_id}/policy/secrets",
+     "openapi/_original/cubist-cubesigner-openapi-original.json#PATCH /v0/org/{org_id}/policy/secrets",
+     "openapi/_original/cubist-cubesigner-openapi-original.json#PUT /v0/org/{org_id}/policy/secrets/{secret_name}"
+    ]
+   },
+   "delinea": {
+    "segments": [
+     "secrets",
+     "secret"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "batchCount": "integer",
+     "currentPage": "integer",
+     "hasNext": "boolean",
+     "hasPrev": "boolean",
+     "nextSkip": "integer",
+     "pageCount": "integer",
+     "prevSkip": "integer",
+     "records": "array",
+     "severity": "string",
+     "skip": "integer",
+     "sortBy": "array",
+     "success": "boolean",
+     "take": "integer",
+     "total": "integer",
+     "apiVersion": "integer",
+     "baseUrl": "string",
+     "encodedUrl": "string",
+     "guid": "string",
+     "launcherType": "string",
+     "launcherTypeId": "integer",
+     "sessionGuid": "string",
+     "ssUrl": "string",
+     "launcherId": "integer",
+     "promptFieldValue": "string",
+     "secretId": "integer",
+     "siteId": "integer",
+     "accessRequestWorkflowMapId": "integer",
+     "active": "boolean",
+     "allowOwnersUnrestrictedSshCommands": "boolean",
+     "autoChangeEnabled": "boolean",
+     "autoChangeNextPassword": "string",
+     "checkedOut": "boolean",
+     "checkOutChangePasswordEnabled": "boolean",
+     "checkOutEnabled": "boolean",
+     "checkOutIntervalMinutes": "integer",
+     "checkOutMinutesRemaining": "integer",
+     "checkOutUserDisplayName": "string",
+     "checkOutUserId": "integer",
+     "doubleLockId": "integer",
+     "enableInheritPermissions": "boolean",
+     "enableInheritSecretPolicy": "boolean",
+     "failedPasswordChangeAttempts": "integer",
+     "folderId": "integer",
+     "id": "integer",
+     "isDoubleLock": "boolean",
+     "isOutOfSync": "boolean",
+     "isRestricted": "boolean",
+     "items": "array",
+     "jumpboxRouteId": "string",
+     "lastHeartBeatCheck": "string",
+     "lastHeartBeatStatus": "string",
+     "lastPasswordChangeAttempt": "string",
+     "launcherConnectAsSecretId": "integer",
+     "name": "string",
+     "outOfSyncReason": "string",
+     "passwordTypeWebScriptId": "integer",
+     "proxyEnabled": "boolean",
+     "requiresApprovalForAccess": "boolean",
+     "requiresComment": "boolean",
+     "responseCodes": "array",
+     "restrictSshCommands": "boolean",
+     "secretPolicyId": "integer",
+     "secretTemplateId": "integer",
+     "secretTemplateName": "string",
+     "sessionRecordingEnabled": "boolean",
+     "webLauncherRequiresIncognitoMode": "boolean",
+     "comment": "string",
+     "doubleLockPassword": "string",
+     "forceCheckIn": "boolean",
+     "includeInactive": "boolean",
+     "newPassword": "string",
+     "noAutoCheckout": "boolean",
+     "sshKeyArgs": "object",
+     "ticketNumber": "string",
+     "ticketSystemId": "integer",
+     "objectType": "string",
+     "changePasswordNow": "boolean",
+     "delayIndexing": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/delinea-secret-server-openapi.json#DELETE /v1/secrets/{id}",
+     "openapi/_original/delinea-secret-server-openapi.json#GET /v1/secret-access-requests/secrets/{id}",
+     "openapi/_original/delinea-secret-server-openapi.json#GET /v1/secret-erase-requests/secrets",
+     "openapi/_original/delinea-secret-server-openapi.json#GET /v2/launchers/secret",
+     "openapi/_original/delinea-secret-server-openapi.json#GET /v2/secrets",
+     "openapi/_original/delinea-secret-server-openapi.json#GET /v2/secrets/{id}",
+     "openapi/_original/delinea-secret-server-openapi.json#POST /v1/launchers/secret",
+     "openapi/_original/delinea-secret-server-openapi.json#POST /v1/secrets",
+     "openapi/_original/delinea-secret-server-openapi.json#PUT /v1/secrets/{id}"
+    ]
+   },
+   "google-cloud-secret-manager": {
+    "segments": [
+     "secrets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "replication": "object",
+     "createTime": "string",
+     "labels": "object",
+     "topics": "array",
+     "expireTime": "string",
+     "ttl": "string",
+     "etag": "string",
+     "rotation": "object",
+     "versionAliases": "object"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#DELETE /projects/{projectId}/secrets/{secretId}",
+     "openapi/_original/openapi.yml#GET /projects/{projectId}/secrets",
+     "openapi/_original/openapi.yml#GET /projects/{projectId}/secrets/{secretId}",
+     "openapi/_original/openapi.yml#PATCH /projects/{projectId}/secrets/{secretId}",
+     "openapi/_original/openapi.yml#POST /projects/{projectId}/secrets"
+    ]
+   },
+   "infisical": {
+    "segments": [
+     "secrets"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "_id": "string",
+     "workspace": "string",
+     "environment": "string",
+     "version": "number",
+     "type": "string",
+     "secretKey": "string",
+     "secretValue": "string",
+     "secretComment": "string",
+     "secretReminderNote": "string",
+     "secretReminderRepeatDays": "number",
+     "skipMultilineEncoding": "boolean",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "actor": "object",
+     "isRotatedSecret": "boolean",
+     "rotationId": "string",
+     "secrets": "array",
+     "imports": "array",
+     "secretValueHidden": "boolean",
+     "secretPath": "string",
+     "tags": "array",
+     "secretMetadata": "array",
+     "projectId": "string",
+     "tagIds": "array",
+     "metadata": "object",
+     "secretReminderRecipients": "array",
+     "newSecretName": "string"
+    },
+    "evidence": [
+     "openapi/_original/infisical-openapi.json#DELETE /api/v4/secrets/batch",
+     "openapi/_original/infisical-openapi.json#DELETE /api/v4/secrets/{secretName}",
+     "openapi/_original/infisical-openapi.json#GET /api/v2/secret-imports/secrets",
+     "openapi/_original/infisical-openapi.json#GET /api/v4/secrets",
+     "openapi/_original/infisical-openapi.json#GET /api/v4/secrets/{secretName}",
+     "openapi/_original/infisical-openapi.json#PATCH /api/v4/secrets/batch",
+     "openapi/_original/infisical-openapi.json#PATCH /api/v4/secrets/{secretName}",
+     "openapi/_original/infisical-openapi.json#POST /api/v4/secrets/batch",
+     "openapi/_original/infisical-openapi.json#POST /api/v4/secrets/{secretName}"
+    ]
+   },
+   "ironcore-labs": {
+    "segments": [
+     "secrets"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "encryptedSecret": "string",
+     "secretFingerprint": "string",
+     "secretPath": "string",
+     "kmsConfigId": "integer",
+     "tenantId": "string",
+     "tenantTags": "array",
+     "secretType": "string",
+     "migrationStatus": "string",
+     "rotationStatus": "string",
+     "created": "string",
+     "updated": "string",
+     "ids": "array",
+     "tags": "array"
+    },
+    "evidence": [
+     "openapi/_original/ironcore-labs-vendor-bridge-openapi.yml#GET /1/tenants/secrets"
+    ]
+   },
+   "onecli": {
+    "segments": [
+     "secrets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "PATCH item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "success": "boolean",
+     "secretIds": "array",
+     "id": "string",
+     "name": "string",
+     "type": "string",
+     "valueSource": "string",
+     "opRef": "string",
+     "hostPattern": "string",
+     "pathPattern": "string",
+     "injectionConfig": null,
+     "metadata": "object",
+     "scope": "string",
+     "typeLabel": "string",
+     "createdAt": "string",
+     "preview": "string",
+     "value": "string",
+     "opDisplay": "object"
+    },
+    "evidence": [
+     "openapi/_original/onecli-openapi-original.yml#DELETE /org/secrets/{secretId}",
+     "openapi/_original/onecli-openapi-original.yml#DELETE /partner/secrets/{secretId}",
+     "openapi/_original/onecli-openapi-original.yml#DELETE /secrets/{secretId}",
+     "openapi/_original/onecli-openapi-original.yml#GET /agents/{agentId}/secrets",
+     "openapi/_original/onecli-openapi-original.yml#GET /org/secrets",
+     "openapi/_original/onecli-openapi-original.yml#GET /partner/secrets",
+     "openapi/_original/onecli-openapi-original.yml#GET /secrets",
+     "openapi/_original/onecli-openapi-original.yml#PATCH /org/secrets/{secretId}",
+     "openapi/_original/onecli-openapi-original.yml#PATCH /partner/secrets/{secretId}",
+     "openapi/_original/onecli-openapi-original.yml#PATCH /secrets/{secretId}",
+     "openapi/_original/onecli-openapi-original.yml#POST /org/secrets",
+     "openapi/_original/onecli-openapi-original.yml#POST /partner/secrets"
+    ]
+   }
+  },
+  "secret_store": {
+   "1password": {
+    "segments": [
+     "vaults"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "description": "string",
+     "attributeVersion": "integer",
+     "contentVersion": "integer",
+     "items": "integer",
+     "type": "string",
+     "createdAt": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/1password-connect-openapi.yml#GET /v1/vaults",
+     "openapi/_original/1password-connect-openapi.yml#GET /v1/vaults/{vaultUuid}"
+    ]
+   },
+   "britive": {
+    "segments": [
+     "vault"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "description": "string",
+     "lastRotation": "string",
+     "nextRotation": "string",
+     "status": "string",
+     "encryptionAlgorithm": "string",
+     "metadata": "object",
+     "defaultNotificationMediumId": "string",
+     "recipients": "object",
+     "maxSecretRotationInterval": "integer",
+     "rotationTime": "integer",
+     "keyRotationScheduleTime": "string",
+     "staticExpiryReminderFrequency": "string",
+     "staticExpiryReminderTime": "string",
+     "staticExpiryReminderDay": "integer",
+     "dynamicRotationScheduleTime": "string",
+     "dynamicRotationIntervalHours": "integer"
+    },
+    "evidence": [
+     "openapi/_original/britive-secrets-manager-api-openapi.json#DELETE /api/v1/secretmanager/vault/{id}",
+     "openapi/_original/britive-secrets-manager-api-openapi.json#GET /api/v1/secretmanager/vault",
+     "openapi/_original/britive-secrets-manager-api-openapi.json#GET /api/v1/secretmanager/vault/{id}",
+     "openapi/_original/britive-secrets-manager-api-openapi.json#PATCH /api/v1/secretmanager/vault/{id}",
+     "openapi/_original/britive-secrets-manager-api-openapi.json#POST /api/v1/secretmanager/vault"
+    ]
+   },
+   "dfns": {
+    "segments": [
+     "vaults"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "orgId": "string",
+     "name": "string",
+     "tags": "array",
+     "externalId": "string",
+     "dateCreated": "string",
+     "dateUpdated": "string",
+     "addresses": "array"
+    },
+    "evidence": [
+     "openapi/_original/dfns-openapi.yml#GET /vaults",
+     "openapi/_original/dfns-openapi.yml#GET /vaults/{vaultId}",
+     "openapi/_original/dfns-openapi.yml#POST /vaults",
+     "openapi/_original/dfns-openapi.yml#PUT /vaults/{vaultId}"
+    ]
+   },
+   "euler": {
+    "segments": [
+     "vaults"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "chainId": "integer",
+     "router": "string",
+     "deployer": "string",
+     "deployedAt": "string",
+     "configs": "array",
+     "vaults": "array",
+     "address": "string",
+     "vaultType": "string",
+     "name": "string",
+     "symbol": "string",
+     "decimals": "integer",
+     "shares": "object",
+     "asset": "object",
+     "totalAssets": "string",
+     "totalBorrows": "string",
+     "totalSupplyUsd": "number",
+     "totalBorrowsUsd": "number",
+     "utilization": "number",
+     "supplyApy": "number",
+     "borrowApy": "number",
+     "createdAt": "string",
+     "dToken": "string",
+     "oracle": "object",
+     "unitOfAccount": "object",
+     "creator": "string",
+     "governor": "string",
+     "governorAdmin": "string",
+     "supplyCap": "string",
+     "borrowCap": "string",
+     "totalShares": "string",
+     "totalBorrowed": "string",
+     "totalCash": "string",
+     "cash": "string",
+     "interestRate": "string",
+     "interestAccumulator": "string",
+     "accumulatedFees": "string",
+     "balanceTracker": "string",
+     "fees": "object",
+     "hooks": "object",
+     "caps": "object",
+     "liquidation": "object",
+     "interestRates": "object",
+     "interestRateModel": "object",
+     "evcCompatibleAsset": "boolean",
+     "oraclePriceRaw": null,
+     "timestamp": "string",
+     "exchangeRate": "string",
+     "createdAtBlock": "string",
+     "collateral": "string",
+     "collateralName": "string",
+     "collateralSymbol": "string",
+     "assetSymbol": "string",
+     "assetDecimals": "integer",
+     "borrowLTV": "string",
+     "liquidationLTV": "string",
+     "initialLiquidationLTV": "string",
+     "targetTimestamp": "string",
+     "rampDuration": "integer",
+     "addresses": "array",
+     "include": "array",
+     "found": "boolean",
+     "factory": [
+      "string",
+      "null"
+     ],
+     "resource": [
+      "string",
+      "null"
+     ],
+     "snapshotTimestamp": "string",
+     "lostAssets": "string",
+     "availableAssets": "string",
+     "availableAssetsUsd": "number",
+     "apyCurrent": "number",
+     "apy7d": "number",
+     "apy30d": "number",
+     "apy90d": "number",
+     "strategyCount": "integer",
+     "suppliedAssets": "string",
+     "withdrawnAssets": "string",
+     "allocatedAssets": "string",
+     "allocatedAssetsUsd": "number",
+     "inSupplyQueue": "boolean",
+     "inWithdrawQueue": "boolean",
+     "supplyQueueIndex": "integer",
+     "withdrawQueueIndex": "integer",
+     "allocationCap": "object",
+     "removableAt": "string",
+     "status": "string",
+     "lastRebalancedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/euler-v3-data-api.json#GET /v3/curator/vaults",
+     "openapi/_original/euler-v3-data-api.json#GET /v3/earn/vaults",
+     "openapi/_original/euler-v3-data-api.json#GET /v3/evk/vaults",
+     "openapi/_original/euler-v3-data-api.json#GET /v3/resolve/vaults",
+     "openapi/_original/euler-v3-data-api.json#POST /v3/earn/vaults/batch",
+     "openapi/_original/euler-v3-data-api.json#POST /v3/evk/vaults/batch",
+     "openapi/_original/euler-v3-data-api.json#POST /v3/resolve/vaults"
+    ]
+   },
+   "fireblocks": {
+    "segments": [
+     "vaults"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "vaultAccountId": "integer",
+     "acceptedCount": "integer",
+     "vaultAccountIds": "array",
+     "removedCount": "integer",
+     "optedOut": "boolean",
+     "total": "integer",
+     "data": "array",
+     "next": "string",
+     "assignedCount": "integer"
+    },
+    "evidence": [
+     "openapi/_original/fireblocks-openapi.yml#DELETE /address_registry/vaults",
+     "openapi/_original/fireblocks-openapi.yml#DELETE /address_registry/vaults/{vaultAccountId}",
+     "openapi/_original/fireblocks-openapi.yml#GET /address_registry/vaults",
+     "openapi/_original/fireblocks-openapi.yml#GET /address_registry/vaults/{vaultAccountId}",
+     "openapi/_original/fireblocks-openapi.yml#GET /legal_entities/{legalEntityId}/vaults",
+     "openapi/_original/fireblocks-openapi.yml#GET /staking/positions/summary/vaults",
+     "openapi/_original/fireblocks-openapi.yml#POST /address_registry/vaults",
+     "openapi/_original/fireblocks-openapi.yml#POST /legal_entities/{legalEntityId}/vaults"
+    ]
+   },
+   "gauntlet": {
+    "segments": [
+     "vaults"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "address": "string",
+     "chain_id": "integer",
+     "group": null,
+     "metrics": "object",
+     "name": "string",
+     "numeraire_token": "object",
+     "strategy": null,
+     "successor_vault_id": [
+      "string",
+      "null"
+     ],
+     "symbol": "string",
+     "vault_id": "string",
+     "vault_type": "string"
+    },
+    "evidence": [
+     "openapi/_original/gauntlet-openapi.json#GET /v1/vaults",
+     "openapi/_original/gauntlet-openapi.json#GET /v1/vaults/{vault_id}"
+    ]
+   },
+   "infisical": {
+    "segments": [
+     "environments"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "slug": "string",
+     "position": "number",
+     "projectId": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "deleteAfter": "string",
+     "softDeletedAt": "string",
+     "deletedByUserId": "string",
+     "deletedByIdentityId": "string",
+     "message": "string",
+     "environment": "object"
+    },
+    "evidence": [
+     "openapi/_original/infisical-openapi.json#DELETE /api/v1/projects/{projectId}/environments/{id}",
+     "openapi/_original/infisical-openapi.json#GET /api/v1/projects/{projectId}/environments/{envId}",
+     "openapi/_original/infisical-openapi.json#PATCH /api/v1/projects/{projectId}/environments/{id}",
+     "openapi/_original/infisical-openapi.json#POST /api/v1/projects/{projectId}/environments"
+    ]
+   },
+   "kamino": {
+    "segments": [
+     "vaults"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "address": null,
+     "state": "object",
+     "programId": null
+    },
+    "evidence": [
+     "openapi/_original/kamino-public-openapi-original.json#GET /kvaults/vaults",
+     "openapi/_original/kamino-public-openapi-original.json#GET /kvaults/vaults/{pubkey}"
+    ]
+   },
+   "onecli": {
+    "segments": [
+     "vaults"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "provider": "string",
+     "status": "string",
+     "name": "string",
+     "lastConnectedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/onecli-openapi-original.yml#GET /vaults"
+    ]
+   },
+   "superform": {
+    "segments": [
+     "vault",
+     "vaults"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "$schema": "string",
+     "form_implementation_id": "integer",
+     "type": "string",
+     "balance": "string",
+     "superform_address": "string",
+     "user_address": "string",
+     "vault_address": "string",
+     "vault_chain_id": "integer",
+     "chain_id": "integer",
+     "protocol_icon": "string",
+     "protocol_id": "string",
+     "protocol_name": "string",
+     "superform_id": "string",
+     "superposition_tvl": "number",
+     "timestamp": "integer",
+     "vault_tvl": "number",
+     "yield_type": "string",
+     "id": "string",
+     "result": "string",
+     "analytics": "array",
+     "assets": "array",
+     "audits": "array",
+     "availability": "string",
+     "chain": "object",
+     "contract_address": "string",
+     "created_at": "string",
+     "decimals": "integer",
+     "deploy_date": "string",
+     "description": "string",
+     "exploits": "array",
+     "external_url": "string",
+     "faq": "array",
+     "fees": "array",
+     "friendly_name": "string",
+     "has_aerc_20_registered": "boolean",
+     "has_rewards": [
+      "boolean",
+      "null"
+     ],
+     "has_timelock": [
+      "boolean",
+      "null"
+     ],
+     "is_authenticated": "boolean",
+     "is_supervault": "boolean",
+     "kyc": "array",
+     "name": "string",
+     "num_depositors": "integer",
+     "other": "array",
+     "protocol": "object",
+     "recommend_vault_share_withdrawal": [
+      "boolean",
+      "null"
+     ],
+     "rewards": "array",
+     "risk_data": "object",
+     "risk_data_last_updated": "string",
+     "super_pools": "array",
+     "symbol": "string",
+     "timelock_duration": [
+      "integer",
+      "null"
+     ],
+     "timelock_unit": [
+      "string",
+      "null"
+     ],
+     "underlying_wrapper_vaults": "array",
+     "updated_at": "string",
+     "vault_lister": "string",
+     "vault_statistics": "object",
+     "vault_status_message": [
+      "string",
+      "null"
+     ],
+     "visibility": "string",
+     "withdraw_to_vault_asset_only": [
+      "boolean",
+      "null"
+     ],
+     "withdrawal_confidence_score": [
+      "number",
+      "null"
+     ],
+     "withdrawal_link": "string",
+     "yield_source": "string"
+    },
+    "evidence": [
+     "openapi/_original/superform-openapi-original.json#GET /checks/address/vault",
+     "openapi/_original/superform-openapi-original.json#GET /protocolRewards/userBalance/historical/vault/{vault_id}",
+     "openapi/_original/superform-openapi-original.json#GET /stats/tvl/vault/{vault_id}",
+     "openapi/_original/superform-openapi-original.json#GET /vault/{vaultOrSuperformIDOrContractAddress}",
+     "openapi/_original/superform-openapi-original.json#GET /vaults",
+     "openapi/_original/superform-openapi-original.json#POST /vault"
+    ]
+   },
+   "tesseract": {
+    "segments": [
+     "vaults"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "address": "string",
+     "chainId": "number",
+     "clientAddress": "string",
+     "deployerAddress": "string",
+     "asset": "string",
+     "assetName": "string",
+     "assetSymbol": "string",
+     "assetDecimals": "number",
+     "shareName": "string",
+     "shareSymbol": "string",
+     "shareDecimals": "number",
+     "feeManager": "string",
+     "withdrawManager": "string",
+     "deployTimestamp": "string",
+     "strategy": "object"
+    },
+    "evidence": [
+     "openapi/_original/tesseract-public-api-openapi.json#GET /clients/{client}/vaults",
+     "openapi/_original/tesseract-public-api-openapi.json#GET /vaults/{vault}"
+    ]
+   },
+   "vgs": {
+    "segments": [
+     "vaults"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "environment": "string",
+     "organization_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/vgs-openapi.yml#GET /vaults",
+     "openapi/_original/vgs-openapi.yml#GET /vaults/{vaultId}",
+     "openapi/_original/vgs-openapi.yml#POST /vaults"
+    ]
+   },
+   "yearn": {
+    "segments": [
+     "vaults"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "address": "string",
+     "type": "string",
+     "kind": "string",
+     "symbol": "string",
+     "displaySymbol": "string",
+     "formatedSymbol": "string",
+     "name": "string",
+     "displayName": "string",
+     "formatedName": "string",
+     "icon": "string",
+     "version": "string",
+     "category": "string",
+     "decimals": "integer",
+     "chainID": "integer",
+     "endorsed": "boolean",
+     "boosted": "boolean",
+     "emergency_shutdown": "boolean",
+     "token": "object",
+     "tvl": "object",
+     "apr": "object",
+     "details": "object",
+     "strategies": "array"
+    },
+    "evidence": [
+     "openapi/_original/ydaemon.yml#GET /{chainID}/vaults/{address}"
+    ]
+   }
+  },
+  "encryption_key": {
+   "google-cloud-kms": {
+    "segments": [
+     "keyrings"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "keyRings": "array",
+     "nextPageToken": "string",
+     "name": "string",
+     "createTime": "string"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#GET /projects/{projectId}/locations/{location}/keyRings",
+     "openapi/_original/openapi.yml#GET /projects/{projectId}/locations/{location}/keyRings/{keyRingId}",
+     "openapi/_original/openapi.yml#POST /projects/{projectId}/locations/{location}/keyRings"
+    ]
+   },
+   "hashicorp-vault": {
+    "segments": [
+     "keys"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "name": "string",
+     "type": "string",
+     "deletion_allowed": "boolean",
+     "derived": "boolean",
+     "exportable": "boolean",
+     "latest_version": "integer",
+     "min_available_version": "integer",
+     "min_decryption_version": "integer",
+     "min_encryption_version": "integer",
+     "supports_encryption": "boolean",
+     "supports_decryption": "boolean",
+     "supports_signing": "boolean",
+     "supports_derivation": "boolean",
+     "allow_plaintext_backup": "boolean",
+     "convergent_encryption": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/hashicorp-vault-openapi.yml#DELETE /transit/keys/{name}",
+     "openapi/_original/hashicorp-vault-openapi.yml#GET /transit/keys/{name}",
+     "openapi/_original/hashicorp-vault-openapi.yml#POST /transit/keys/{name}"
+    ]
+   },
+   "hvault": {
+    "segments": [
+     "keys"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "name": "string",
+     "type": "string",
+     "deletion_allowed": "boolean",
+     "derived": "boolean",
+     "exportable": "boolean",
+     "allow_plaintext_backup": "boolean",
+     "keys": "object",
+     "min_decryption_version": "integer",
+     "min_encryption_version": "integer",
+     "supports_encryption": "boolean",
+     "supports_decryption": "boolean",
+     "supports_derivation": "boolean",
+     "supports_signing": "boolean",
+     "auto_rotate_period": "string",
+     "latest_version": "integer",
+     "convergent_encryption": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/hvault-secrets-engines-openapi.yml#DELETE /transit/keys/{name}",
+     "openapi/_original/hvault-secrets-engines-openapi.yml#GET /transit/keys/{name}",
+     "openapi/_original/hvault-secrets-engines-openapi.yml#POST /transit/keys/{name}"
+    ]
+   },
+   "infisical": {
+    "segments": [
+     "keys"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "description": "string",
+     "isDisabled": "boolean",
+     "orgId": "string",
+     "name": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "projectId": "string",
+     "keyUsage": "string",
+     "kmipMetadata": null,
+     "isExportable": "boolean",
+     "hasDeleteProtection": "boolean",
+     "version": "number",
+     "algorithm": "string"
+    },
+    "evidence": [
+     "openapi/_original/infisical-openapi.json#DELETE /api/v1/kms/keys/{keyId}",
+     "openapi/_original/infisical-openapi.json#GET /api/v1/kms/keys",
+     "openapi/_original/infisical-openapi.json#GET /api/v1/kms/keys/{keyId}",
+     "openapi/_original/infisical-openapi.json#PATCH /api/v1/kms/keys/{keyId}",
+     "openapi/_original/infisical-openapi.json#POST /api/v1/kms/keys"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "1password",
+    "aembit",
+    "akeyless",
+    "amazon-certificate-manager",
+    "amazon-kms",
+    "bitwarden",
+    "blindinsight",
+    "britive",
+    "conjur",
+    "cubist",
+    "cyberark",
+    "dashlane",
+    "delinea",
+    "dfns",
+    "doppler",
+    "euler",
+    "evervault",
+    "fireblocks",
+    "fortanix",
+    "gauntlet",
+    "google-cloud-kms",
+    "google-cloud-secret-manager",
+    "gr4vy",
+    "hashicorp-vault",
+    "hvault",
+    "infisical",
+    "ironcore-labs",
+    "kamino",
+    "lit-protocol",
+    "nord-security",
+    "onecli",
+    "passbolt",
+    "paubox",
+    "postman",
+    "ribbon-finance",
+    "signal",
+    "superform",
+    "tesseract",
+    "turnkey",
+    "venafi",
+    "very-good-security",
+    "vgs",
+    "yearn"
+   ],
+   "kebab-case": [
+    "aembit",
+    "akeyless",
+    "amazon-kms",
+    "bitwarden",
+    "blindinsight",
+    "britive",
+    "conjur",
+    "cubist",
+    "delinea",
+    "dfns",
+    "euler",
+    "evervault",
+    "fireblocks",
+    "fortanix",
+    "gr4vy",
+    "hashicorp-vault",
+    "hvault",
+    "infisical",
+    "kamino",
+    "nord-security",
+    "onecli",
+    "passbolt",
+    "paubox",
+    "postman",
+    "ribbon-finance",
+    "superform",
+    "tesseract"
+   ],
+   "snake_case": [
+    "blindinsight",
+    "conjur",
+    "cubist",
+    "cyberark",
+    "fireblocks",
+    "fortanix",
+    "lit-protocol",
+    "nord-security",
+    "paubox",
+    "securden",
+    "signal",
+    "turnkey"
+   ],
+   "other": [
+    "amazon-secrets-manager",
+    "cubist",
+    "evervault",
+    "fortanix",
+    "google-cloud-kms",
+    "google-cloud-secret-manager",
+    "hvault",
+    "infisical",
+    "ironcore-labs",
+    "kamino",
+    "virtru"
+   ],
+   "camelCase": [
+    "1password",
+    "aembit",
+    "britive",
+    "fireblocks",
+    "google-cloud-kms",
+    "postman",
+    "superform"
+   ],
+   "PascalCase": [
+    "1password",
+    "dashlane",
+    "postman",
+    "venafi",
+    "virtru"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "1password",
+    "aembit",
+    "bitwarden",
+    "blindinsight",
+    "britive",
+    "cubist",
+    "cyberark",
+    "delinea",
+    "dfns",
+    "doppler",
+    "euler",
+    "evervault",
+    "fireblocks",
+    "fortanix",
+    "gauntlet",
+    "google-cloud-secret-manager",
+    "gr4vy",
+    "hashicorp-vault",
+    "hvault",
+    "infisical",
+    "ironcore-labs",
+    "kamino",
+    "lit-protocol",
+    "nord-security",
+    "onecli",
+    "passbolt",
+    "paubox",
+    "postman",
+    "ribbon-finance",
+    "superform",
+    "tesseract",
+    "venafi",
+    "very-good-security",
+    "vgs",
+    "yearn"
+   ],
+   "camelCase": [
+    "1password",
+    "amazon-certificate-manager",
+    "bitwarden",
+    "britive",
+    "delinea",
+    "dfns",
+    "euler",
+    "evervault",
+    "fireblocks",
+    "google-cloud-kms",
+    "google-cloud-secret-manager",
+    "infisical",
+    "ironcore-labs",
+    "kamino",
+    "onecli",
+    "paubox",
+    "postman",
+    "signal",
+    "superform",
+    "venafi",
+    "yearn"
+   ],
+   "snake_case": [
+    "1password",
+    "blindinsight",
+    "cubist",
+    "fortanix",
+    "gauntlet",
+    "gr4vy",
+    "infisical",
+    "lit-protocol",
+    "nord-security",
+    "onecli",
+    "paubox",
+    "postman",
+    "ribbon-finance",
+    "securden",
+    "superform"
+   ],
+   "kebab-case": [
+    "aembit",
+    "nord-security",
+    "venafi"
+   ],
+   "other": [
+    "cubist",
+    "delinea",
+    "passbolt"
+   ],
+   "PascalCase": [
+    "fortanix",
+    "venafi"
+   ]
+  },
+  "property": {
+   "lower": [
+    "1password",
+    "aembit",
+    "britive",
+    "cubist",
+    "delinea",
+    "dfns",
+    "euler",
+    "fireblocks",
+    "gauntlet",
+    "google-cloud-kms",
+    "google-cloud-secret-manager",
+    "hashicorp-vault",
+    "hvault",
+    "infisical",
+    "ironcore-labs",
+    "kamino",
+    "onecli",
+    "superform",
+    "tesseract",
+    "vgs",
+    "yearn"
+   ],
+   "camelCase": [
+    "1password",
+    "aembit",
+    "britive",
+    "delinea",
+    "dfns",
+    "euler",
+    "fireblocks",
+    "google-cloud-kms",
+    "google-cloud-secret-manager",
+    "infisical",
+    "ironcore-labs",
+    "kamino",
+    "onecli",
+    "tesseract",
+    "yearn"
+   ],
+   "snake_case": [
+    "cubist",
+    "gauntlet",
+    "hashicorp-vault",
+    "hvault",
+    "superform",
+    "vgs",
+    "yearn"
+   ],
+   "other": [
+    "infisical",
+    "superform"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "1password",
+    "aembit",
+    "bitwarden",
+    "blindinsight",
+    "britive",
+    "conjur",
+    "cubist",
+    "cyberark",
+    "delinea",
+    "dfns",
+    "euler",
+    "evervault",
+    "fireblocks",
+    "fortanix",
+    "gauntlet",
+    "google-cloud-kms",
+    "gr4vy",
+    "hashicorp-vault",
+    "hvault",
+    "infisical",
+    "kamino",
+    "nord-security",
+    "onecli",
+    "paubox",
+    "postman",
+    "signal",
+    "superform",
+    "tesseract",
+    "venafi",
+    "very-good-security",
+    "vgs",
+    "yearn"
+   ],
+   "camelCase": [
+    "1password",
+    "aembit",
+    "amazon-certificate-manager",
+    "britive",
+    "delinea",
+    "dfns",
+    "euler",
+    "fireblocks",
+    "google-cloud-kms",
+    "google-cloud-secret-manager",
+    "infisical",
+    "ironcore-labs",
+    "kamino",
+    "nord-security",
+    "onecli",
+    "passbolt",
+    "postman",
+    "signal",
+    "superform",
+    "tesseract",
+    "venafi",
+    "vgs",
+    "yearn"
+   ],
+   "snake_case": [
+    "blindinsight",
+    "britive",
+    "conjur",
+    "cubist",
+    "evervault",
+    "fortanix",
+    "gauntlet",
+    "gr4vy",
+    "hvault",
+    "nord-security",
+    "paubox",
+    "ribbon-finance",
+    "superform",
+    "venafi"
+   ],
+   "kebab-case": [
+    "britive",
+    "fortanix",
+    "nord-security",
+    "postman"
+   ],
+   "other": [
+    "delinea",
+    "evervault"
+   ],
+   "PascalCase": [
+    "amazon-kms"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "1password",
+    "blindinsight",
+    "britive",
+    "cyberark",
+    "dfns",
+    "euler",
+    "evervault",
+    "fireblocks",
+    "fortanix",
+    "gauntlet",
+    "gr4vy",
+    "infisical",
+    "kamino",
+    "nord-security",
+    "postman",
+    "ribbon-finance",
+    "superform",
+    "tesseract",
+    "venafi",
+    "yearn"
+   ],
+   "offset": [
+    "1password",
+    "blindinsight",
+    "cyberark",
+    "euler",
+    "evervault",
+    "fireblocks",
+    "fortanix",
+    "infisical",
+    "nord-security",
+    "postman",
+    "ribbon-finance",
+    "superform",
+    "tesseract",
+    "venafi"
+   ],
+   "page": [
+    "aembit",
+    "britive",
+    "doppler",
+    "evervault",
+    "ironcore-labs",
+    "nord-security",
+    "paubox",
+    "yearn"
+   ],
+   "page_size": [
+    "cubist",
+    "evervault",
+    "fireblocks",
+    "google-cloud-kms",
+    "google-cloud-secret-manager",
+    "ironcore-labs",
+    "lit-protocol"
+   ],
+   "cursor": [
+    "fireblocks",
+    "gr4vy",
+    "infisical",
+    "postman"
+   ],
+   "start": [
+    "bitwarden",
+    "gauntlet",
+    "kamino"
+   ],
+   "page_token": [
+    "britive",
+    "google-cloud-kms",
+    "google-cloud-secret-manager"
+   ],
+   "after": [
+    "1password",
+    "fireblocks"
+   ],
+   "count": [
+    "1password",
+    "postman"
+   ],
+   "next": [
+    "fireblocks",
+    "gauntlet"
+   ],
+   "per_page": [
+    "aembit"
+   ],
+   "size": [
+    "britive"
+   ],
+   "skip": [
+    "delinea"
+   ],
+   "starting_after": [
+    "evervault"
+   ],
+   "before": [
+    "fireblocks"
+   ]
+  }
+ }
+}

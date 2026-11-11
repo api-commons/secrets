@@ -1,0 +1,53 @@
+provider: infisical
+apis_io: https://apis.io/providers/infisical/
+context: secrets
+generated: '2026-11-11'
+concepts:
+  secret:
+    path_segment:
+    - secrets
+    properties:
+      metadata:
+      - tags
+      - metadata
+      created_at: createdAt
+      id:
+      - id
+      - _id
+      type: type
+      updated_at: updatedAt
+      store_id:
+      - environment
+      - projectId
+      version: version
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/infisical-openapi.json#DELETE /api/v4/secrets/batch
+    - openapi/_original/infisical-openapi.json#DELETE /api/v4/secrets/{secretName}
+    - openapi/_original/infisical-openapi.json#GET /api/v2/secret-imports/secrets
+    - openapi/_original/infisical-openapi.json#GET /api/v4/secrets
+    - openapi/_original/infisical-openapi.json#GET /api/v4/secrets/{secretName}
+  secret_store:
+    path_segment:
+    - environments
+    properties:
+      id: id
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/infisical-openapi.json#DELETE /api/v1/projects/{projectId}/environments/{id}
+    - openapi/_original/infisical-openapi.json#GET /api/v1/projects/{projectId}/environments/{envId}
+    - openapi/_original/infisical-openapi.json#PATCH /api/v1/projects/{projectId}/environments/{id}
+    - openapi/_original/infisical-openapi.json#POST /api/v1/projects/{projectId}/environments
+  encryption_key:
+    path_segment:
+    - keys
+    properties:
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/infisical-openapi.json#DELETE /api/v1/kms/keys/{keyId}
+    - openapi/_original/infisical-openapi.json#GET /api/v1/kms/keys
+    - openapi/_original/infisical-openapi.json#GET /api/v1/kms/keys/{keyId}
+    - openapi/_original/infisical-openapi.json#PATCH /api/v1/kms/keys/{keyId}
+    - openapi/_original/infisical-openapi.json#POST /api/v1/kms/keys

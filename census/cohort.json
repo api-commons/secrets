@@ -1,0 +1,339 @@
+[
+ {
+  "slug": "1password",
+  "specs": [
+   "openapi/_original/1password-connect-openapi.yml",
+   "openapi/_original/1password-events-openapi.yml",
+   "openapi/_original/1password-openapi.json",
+   "openapi/_original/1password-partnership-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aembit",
+  "specs": [
+   "openapi/_original/aembit-cloud-openapi-original.yml",
+   "openapi/_original/aembit-edge-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "akeyless",
+  "specs": [
+   "openapi/_original/akeyless-akeyless-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-certificate-manager",
+  "specs": [
+   "openapi/_original/amazon-certificate-manager-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-kms",
+  "specs": [
+   "openapi/_original/amazon-kms-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-secrets-manager",
+  "specs": [
+   "openapi/_original/amazon-secrets-manager-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bitwarden",
+  "specs": [
+   "openapi/_original/bitwarden-public-swagger.json"
+  ]
+ },
+ {
+  "slug": "blindinsight",
+  "specs": [
+   "openapi/_original/blindinsight-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "britive",
+  "specs": [
+   "openapi/_original/britive-secrets-manager-api-openapi.json",
+   "openapi/_original/britive-services-api-openapi.json",
+   "openapi/_original/britive-services-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "conjur",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "cubist",
+  "specs": [
+   "openapi/_original/cubist-cubesigner-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "cyberark",
+  "specs": [
+   "openapi/_original/cyberark-conjur-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dashlane",
+  "specs": [
+   "openapi/_original/dashlane-public-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "delinea",
+  "specs": [
+   "openapi/_original/delinea-secret-server-openapi.json"
+  ]
+ },
+ {
+  "slug": "dfns",
+  "specs": [
+   "openapi/_original/dfns-openapi.yml"
+  ]
+ },
+ {
+  "slug": "doppler",
+  "specs": [
+   "openapi/_original/doppler-openapi.json"
+  ]
+ },
+ {
+  "slug": "euler",
+  "specs": [
+   "openapi/_original/euler-v3-data-api.json"
+  ]
+ },
+ {
+  "slug": "evervault",
+  "specs": [
+   "openapi/_original/evervault-openapi.json"
+  ]
+ },
+ {
+  "slug": "fireblocks",
+  "specs": [
+   "openapi/_original/fireblocks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fortanix",
+  "specs": [
+   "openapi/_original/fortanix-armor-key-insight-openapi-original.json",
+   "openapi/_original/fortanix-ccm-openapi-original.json",
+   "openapi/_original/fortanix-dsm-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "gauntlet",
+  "specs": [
+   "openapi/_original/gauntlet-openapi.json"
+  ]
+ },
+ {
+  "slug": "google-cloud-kms",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-cloud-secret-manager",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "gr4vy",
+  "specs": [
+   "openapi/_original/gr4vy-docs-v1-openapi.json",
+   "openapi/_original/gr4vy-docs-v1-openapi.yml",
+   "openapi/_original/gr4vy-openapi.json",
+   "openapi/_original/gr4vy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hashicorp-vault",
+  "specs": [
+   "openapi/_original/hashicorp-vault-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hvault",
+  "specs": [
+   "openapi/_original/hvault-auth-methods-openapi.yml",
+   "openapi/_original/hvault-identity-openapi.yml",
+   "openapi/_original/hvault-secrets-engines-openapi.yml",
+   "openapi/_original/hvault-system-backend-openapi.yml"
+  ]
+ },
+ {
+  "slug": "infisical",
+  "specs": [
+   "openapi/_original/infisical-openapi.json"
+  ]
+ },
+ {
+  "slug": "ironcore-labs",
+  "specs": [
+   "openapi/_original/ironcore-labs-vendor-bridge-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kamino",
+  "specs": [
+   "openapi/_original/kamino-public-openapi-original.json",
+   "openapi/_original/kamino-transactions-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "lit-protocol",
+  "specs": [
+   "openapi/_original/lit-protocol-openapi.json"
+  ]
+ },
+ {
+  "slug": "nord-security",
+  "specs": [
+   "openapi/_original/nord-security-nordstellar-company-risk-scoring-api-openapi.json",
+   "openapi/_original/nord-security-nordstellar-cybersec-api-openapi.json",
+   "openapi/_original/nord-security-nordstellar-enterprise-data-api-openapi.json",
+   "openapi/_original/nord-security-nordstellar-partners-api-openapi.json",
+   "openapi/_original/nord-security-nordstellar-platform-integration-api-v1-openapi.json",
+   "openapi/_original/nord-security-nordstellar-platform-integration-api-v2-openapi.json",
+   "openapi/_original/nord-security-nordstellar-platform-integration-api-v3-openapi.json"
+  ]
+ },
+ {
+  "slug": "onecli",
+  "specs": [
+   "openapi/_original/onecli-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "passbolt",
+  "specs": [
+   "openapi/_original/passbolt-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "paubox",
+  "specs": [
+   "openapi/_original/paubox-email-api-openapi.yaml",
+   "openapi/_original/paubox-forms-api-openapi.yaml",
+   "openapi/_original/paubox-marketing-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "postman",
+  "specs": [
+   "openapi/_original/postman-api-comments-api-openapi.yml",
+   "openapi/_original/postman-api-openapi.yml",
+   "openapi/_original/postman-api-schemas-api-openapi.yml",
+   "openapi/_original/postman-api-versions-api-openapi.yml",
+   "openapi/_original/postman-apis-api-openapi.yml",
+   "openapi/_original/postman-audit-logs-api-openapi.yml",
+   "openapi/_original/postman-collection-runs-api-openapi.yml",
+   "openapi/_original/postman-collections-api-openapi.yml",
+   "openapi/_original/postman-environments-api-openapi.yml",
+   "openapi/_original/postman-mock-servers-api-openapi.yml",
+   "openapi/_original/postman-mocks-api-openapi.yml",
+   "openapi/_original/postman-monitors-api-openapi.yml",
+   "openapi/_original/postman-network-elements-api-openapi.yml",
+   "openapi/_original/postman-network-folders-api-openapi.yml",
+   "openapi/_original/postman-network-requests-api-openapi.yml",
+   "openapi/_original/postman-private-api-network-api-openapi.yml",
+   "openapi/_original/postman-secret-scanner-api-openapi.yml",
+   "openapi/_original/postman-server-responses-api-openapi.yml",
+   "openapi/_original/postman-tags-api-openapi.yml",
+   "openapi/_original/postman-webhooks-api-openapi.yml",
+   "openapi/_original/postman-workspaces-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ribbon-finance",
+  "specs": [
+   "openapi/_original/aevo-private-rest-api.json",
+   "openapi/_original/aevo-public-rest-api.json"
+  ]
+ },
+ {
+  "slug": "securden",
+  "specs": [
+   "openapi/_original/securden-password-retrieval-openapi.yml"
+  ]
+ },
+ {
+  "slug": "signal",
+  "specs": [
+   "openapi/_original/signal-server-openapi.yml"
+  ]
+ },
+ {
+  "slug": "superform",
+  "specs": [
+   "openapi/_original/superform-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "tesseract",
+  "specs": [
+   "openapi/_original/tesseract-public-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "turnkey",
+  "specs": [
+   "openapi/_original/turnkey-openapi.yml"
+  ]
+ },
+ {
+  "slug": "venafi",
+  "specs": [
+   "openapi/_original/venafi-certificate-manager-saas-openapi.json",
+   "openapi/_original/venafi-certificate-manager-saas-openapi.yml",
+   "openapi/_original/venafi-trust-protection-foundation-websdk-openapi.json",
+   "openapi/_original/venafi-trust-protection-foundation-websdk-openapi.yml"
+  ]
+ },
+ {
+  "slug": "very-good-security",
+  "specs": [
+   "openapi/_original/very-good-security-vault-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "vgs",
+  "specs": [
+   "openapi/_original/vgs-openapi.yml"
+  ]
+ },
+ {
+  "slug": "virtru",
+  "specs": [
+   "openapi/_original/virtru-authorization-openapi.yaml",
+   "openapi/_original/virtru-authorization-v2-openapi.yaml",
+   "openapi/_original/virtru-entity-openapi.yaml",
+   "openapi/_original/virtru-entity-resolution-v2-openapi.yaml",
+   "openapi/_original/virtru-kas-openapi.yaml",
+   "openapi/_original/virtru-policy-actions-openapi.yaml",
+   "openapi/_original/virtru-policy-attributes-openapi.yaml",
+   "openapi/_original/virtru-policy-kas-registry-openapi.yaml",
+   "openapi/_original/virtru-policy-key-management-openapi.yaml",
+   "openapi/_original/virtru-policy-namespaces-openapi.yaml",
+   "openapi/_original/virtru-policy-obligations-openapi.yaml",
+   "openapi/_original/virtru-policy-registered-resources-openapi.yaml",
+   "openapi/_original/virtru-policy-resource-mapping-openapi.yaml",
+   "openapi/_original/virtru-policy-subject-mapping-openapi.yaml",
+   "openapi/_original/virtru-wellknown-configuration-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "yearn",
+  "specs": [
+   "openapi/_original/ydaemon.yml"
+  ]
+ }
+]

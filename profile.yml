@@ -1,0 +1,347 @@
+context: secrets
+name: Secrets Management
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Secrets Management
+  - Key Management
+  - Password Management
+  - Vault
+  - Secrets
+  - Encryption
+  - KMS
+  - Password Manager
+  providers_with_harvested_openapi: 46
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates:
+  hashicorp-vault:
+  - hvault
+shared_specs: {}
+concepts:
+  secret:
+    segments_seen:
+      secrets: 8
+      items: 1
+      secret: 1
+    providers_exposing: 9
+    providers_with_readable_schema: 9
+    operations:
+    - operation: GET collection
+      providers: 9
+      share: 1.0
+      tier: core
+    - operation: DELETE item
+      providers: 7
+      share: 0.778
+      tier: core
+    - operation: POST collection
+      providers: 7
+      share: 0.778
+      tier: core
+    - operation: GET item
+      providers: 6
+      share: 0.667
+      tier: core
+    - operation: UPDATE item
+      providers: 6
+      share: 0.667
+      tier: core
+    - operation: UPDATE collection
+      providers: 4
+      share: 0.444
+      tier: extended
+    - operation: DELETE collection
+      providers: 2
+      share: 0.222
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.111
+      tier: long-tail
+    properties:
+    - name: metadata
+      tier: core
+      providers: 8
+      share: 0.889
+      type: array
+      spellings:
+      - tags
+      - metadata
+      - labels
+    - name: created_at
+      tier: core
+      providers: 7
+      share: 0.778
+      type: string
+      spellings:
+      - createdAt
+      - created
+      - createTime
+    - name: id
+      tier: core
+      providers: 7
+      share: 0.778
+      type: string
+      spellings:
+      - id
+      - secretId
+      - guid
+      - _id
+    - name: name
+      tier: core
+      providers: 6
+      share: 0.667
+      type: string
+      spellings:
+      - name
+      - path
+      - title
+    - name: type
+      tier: core
+      providers: 6
+      share: 0.667
+      type: string
+      spellings:
+      - type
+      - secretType
+      - category
+    - name: updated_at
+      tier: core
+      providers: 5
+      share: 0.556
+      type: string
+      spellings:
+      - updatedAt
+      - modifiedAt
+      - last_modified
+      - updated
+    - name: description
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: string
+      spellings:
+      - description
+      - comment
+    - name: status
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: string
+      spellings:
+      - state
+      - status
+      - active
+    - name: store_id
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: string
+      spellings:
+      - vault
+      - folderId
+      - environment
+      - projectId
+    - name: version
+      tier: extended
+      providers: 3
+      share: 0.333
+      type: integer
+      spellings:
+      - version
+    long_tail_count: 159
+    long_tail_sample:
+    - secret_metadata
+    - secret_path
+    - access_policy_count
+    - access_request_workflow_map_id
+    - acl
+    - actor
+    - agent_controller_ids
+    - agent_controllers_count
+    - allow_owners_unrestricted_ssh_commands
+    - api_version
+    - applies_to_scopes
+    - auto_change_enabled
+    - auto_change_next_password
+    - base_url
+    - batch_count
+    - certificate
+    - change_password_now
+    - check_out_change_password_enabled
+    - check_out_enabled
+    - check_out_interval_minutes
+    - check_out_minutes_remaining
+    - check_out_user_display_name
+    - check_out_user_id
+    - checked_out
+    - created_by
+    - delay_indexing
+    - delegation_enabled
+    - double_lock_id
+    - double_lock_password
+    - dual_account
+    - edit_policy
+    - enable_inherit_permissions
+    - enable_inherit_secret_policy
+    - encoded_url
+    - encrypted_secret
+    - entities
+    - entity_type
+    - etag
+    - expire_time
+    - expires_at
+  secret_store:
+    segments_seen:
+      vaults: 2
+      vault: 1
+      environments: 1
+    providers_exposing: 4
+    providers_with_readable_schema: 4
+    operations:
+    - operation: GET collection
+      providers: 3
+      share: 0.75
+      tier: core
+    - operation: GET item
+      providers: 3
+      share: 0.75
+      tier: core
+    - operation: DELETE item
+      providers: 2
+      share: 0.5
+      tier: long-tail
+    - operation: POST collection
+      providers: 2
+      share: 0.5
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 2
+      share: 0.5
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 4
+      share: 1.0
+      type: string
+      spellings:
+      - id
+    - name: name
+      tier: core
+      providers: 4
+      share: 1.0
+      type: string
+      spellings:
+      - name
+    long_tail_count: 32
+    long_tail_sample:
+    - created_at
+    - description
+    - status
+    - updated_at
+    - attribute_version
+    - content_version
+    - default_notification_medium_id
+    - delete_after
+    - deleted_by_identity_id
+    - deleted_by_user_id
+    - dynamic_rotation_interval_hours
+    - dynamic_rotation_schedule_time
+    - encryption_algorithm
+    - environment
+    - items
+    - key_rotation_schedule_time
+    - last_connected_at
+    - last_rotation
+    - max_secret_rotation_interval
+    - metadata
+    - next_rotation
+    - position
+    - project_id
+    - provider
+    - recipients
+    - rotation_time
+    - slug
+    - soft_deleted_at
+    - static_expiry_reminder_day
+    - static_expiry_reminder_frequency
+    - static_expiry_reminder_time
+    - type
+  encryption_key:
+    segments_seen:
+      keys: 2
+      keyrings: 1
+    providers_exposing: 3
+    providers_with_readable_schema: 3
+    operations:
+    - operation: GET item
+      providers: 3
+      share: 1.0
+      tier: core
+    - operation: DELETE item
+      providers: 2
+      share: 0.667
+      tier: long-tail
+    - operation: GET collection
+      providers: 2
+      share: 0.667
+      tier: long-tail
+    - operation: POST collection
+      providers: 2
+      share: 0.667
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.333
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 1
+      share: 0.333
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 3
+      share: 1.0
+      type: string
+      spellings:
+      - name
+    long_tail_count: 30
+    long_tail_sample:
+    - created_at
+    - algorithm
+    - allow_plaintext_backup
+    - auto_rotate_period
+    - convergent_encryption
+    - deletion_allowed
+    - derived
+    - description
+    - exportable
+    - has_delete_protection
+    - id
+    - is_disabled
+    - is_exportable
+    - key_usage
+    - keys
+    - kmip_metadata
+    - latest_version
+    - min_available_version
+    - min_decryption_version
+    - min_encryption_version
+    - next_page_token
+    - org_id
+    - project_id
+    - supports_decryption
+    - supports_derivation
+    - supports_encryption
+    - supports_signing
+    - type
+    - updated_at
+    - version

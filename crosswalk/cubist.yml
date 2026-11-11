@@ -1,0 +1,19 @@
+provider: cubist
+apis_io: https://apis.io/providers/cubist/
+context: secrets
+generated: '2026-11-11'
+concepts:
+  secret:
+    path_segment:
+    - secrets
+    properties:
+      metadata: metadata
+      created_at: created
+      updated_at: last_modified
+      version: version
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/cubist-cubesigner-openapi-original.json#DELETE /v0/org/{org_id}/policy/secrets/{secret_name}
+    - openapi/_original/cubist-cubesigner-openapi-original.json#GET /v0/org/{org_id}/policy/secrets
+    - openapi/_original/cubist-cubesigner-openapi-original.json#PATCH /v0/org/{org_id}/policy/secrets
+    - openapi/_original/cubist-cubesigner-openapi-original.json#PUT /v0/org/{org_id}/policy/secrets/{secret_name}

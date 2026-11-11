@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/secrets/main/schema/encryption_key.json",
+  "title": "Encryption Key",
+  "description": "The common encryption_key in Secrets Management, distilled from 3 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "name"
+      ]
+    }
+  },
+  "required": [],
+  "x-commons": {
+    "context": "secrets",
+    "concept": "encryption_key",
+    "providers": 3,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

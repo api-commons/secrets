@@ -1,0 +1,51 @@
+aid: common-secrets
+name: Secrets Management
+type: Common
+description: 'The common Secrets Management vocabulary, distilled from the harvested OpenAPI of 46 providers in
+  APIs.io: shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names
+  to each provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Secrets Management
+- Key Management
+- Password Management
+- Vault
+- Common Schema
+created: '2026-11-11'
+modified: '2026-11-11'
+url: https://raw.githubusercontent.com/api-commons/secrets/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-secrets:secrets
+  name: Common Secrets Management Interface
+  description: The Secrets Management interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/secrets
+  tags:
+  - Secrets Management
+  - Key Management
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/secrets/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/secrets/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/secrets/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: secret
+    url: https://raw.githubusercontent.com/api-commons/secrets/main/schema/secret.json
+  - type: JSONSchema
+    name: secret_store
+    url: https://raw.githubusercontent.com/api-commons/secrets/main/schema/secret_store.json
+  - type: JSONSchema
+    name: encryption_key
+    url: https://raw.githubusercontent.com/api-commons/secrets/main/schema/encryption_key.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/secrets/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

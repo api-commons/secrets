@@ -1,0 +1,63 @@
+context: secrets
+generated: '2026-11-11'
+adopters:
+- provider: 1password
+  apis_io: https://apis.io/providers/1password/
+  crosswalk: crosswalk/1password.yml
+  concepts:
+  - secret
+  - secret_store
+- provider: aembit
+  apis_io: https://apis.io/providers/aembit/
+  crosswalk: crosswalk/aembit.yml
+  concepts:
+  - secret
+- provider: britive
+  apis_io: https://apis.io/providers/britive/
+  crosswalk: crosswalk/britive.yml
+  concepts:
+  - secret
+  - secret_store
+- provider: cubist
+  apis_io: https://apis.io/providers/cubist/
+  crosswalk: crosswalk/cubist.yml
+  concepts:
+  - secret
+- provider: delinea
+  apis_io: https://apis.io/providers/delinea/
+  crosswalk: crosswalk/delinea.yml
+  concepts:
+  - secret
+- provider: google-cloud-kms
+  apis_io: https://apis.io/providers/google-cloud-kms/
+  crosswalk: crosswalk/google-cloud-kms.yml
+  concepts:
+  - encryption_key
+- provider: google-cloud-secret-manager
+  apis_io: https://apis.io/providers/google-cloud-secret-manager/
+  crosswalk: crosswalk/google-cloud-secret-manager.yml
+  concepts:
+  - secret
+- provider: hashicorp-vault
+  apis_io: https://apis.io/providers/hashicorp-vault/
+  crosswalk: crosswalk/hashicorp-vault.yml
+  concepts:
+  - encryption_key
+- provider: infisical
+  apis_io: https://apis.io/providers/infisical/
+  crosswalk: crosswalk/infisical.yml
+  concepts:
+  - encryption_key
+  - secret
+  - secret_store
+- provider: ironcore-labs
+  apis_io: https://apis.io/providers/ironcore-labs/
+  crosswalk: crosswalk/ironcore-labs.yml
+  concepts:
+  - secret
+- provider: onecli
+  apis_io: https://apis.io/providers/onecli/
+  crosswalk: crosswalk/onecli.yml
+  concepts:
+  - secret
+  - secret_store
